@@ -9,7 +9,7 @@ function App() {
       try {
         const response = await fetch("https://thesimpsonsapi.com/api/characters");
         const datos = await response.json();
-        setPersonajes(datos.results.slice(0,20));
+        setPersonajes(datos.results.slice(0,12));
       } catch (error) {
         console.log("Error al obtener personajes:", error);
       }
